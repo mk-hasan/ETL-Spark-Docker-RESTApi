@@ -6,7 +6,7 @@ The architecture:
 
 
 ## Project Structure:
-
+```
 -etl
     -src
 	-configs
@@ -18,7 +18,7 @@ The architecture:
 	-postgresdriver.jar
 
     -docker-compose.yml
-
+```
 
 etl_config.json : The confguration details for the database and input data
 
@@ -72,14 +72,14 @@ N.B: if you want to change the database details or input data then please chage 
 
 
 ### API CREATION AND TESTING
-
+```
 -app
     -app.py
     -init.py
     -unit_test.py
     -Dockerfile
     -config_restapi.json
-
+```
 ## Module Details
 
 app.py - this is main rest api service file. It will be used for starting the api.
@@ -123,6 +123,7 @@ config_restapi.json - this is the config file for the app. The database configur
 N.B: It is possible to run the app just using all the example command stated above. It is also possible to run this api from local machine without dockerizing but i would not recommend as you need to install all the dependencies mentioned in requirements.txt and create a virtual environment. 
 
 Thank you. For any help please email: hasan.alive@gmail.com
+
 
 
 
