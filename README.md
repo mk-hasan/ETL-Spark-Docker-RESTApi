@@ -72,6 +72,8 @@ N.B: if you want to change the database details or input data then please chage 
 
 
 ### API CREATION AND TESTING
+# Project Structure:
+
 ```
 -app
     -app.py
