@@ -1,0 +1,37 @@
+version: "3.7"
+services:
+  pyspark-notebook:
+    ports:
+        - '8888:8888'
+    volumes:
+        - '/mnt/c/Users/KamrulHasan/Documents/repo/data-engineer-challenge-python/data-engineer-challenge-python/etl:/home/jovyan/work'
+    image: jupyter/pyspark-notebook
+    networks:
+    - pyspark-net
+  postgres:
+    image: postgres:11.3
+    environment:
+      POSTGRES_USERNAME: postgres
+      POSTGRES_PASSWORD: postgres1234
+      POSTGRES_DB: demo
+    ports:
+    - "5432:5432/tcp"
+    networks:
+    - pyspark-net
+    volumes:
+    - $HOME/data/postgres:/var/lib/postgresql/data
+    deploy:
+     restart_policy:
+       condition: on-failure
+  adminer:
+    image: adminer:latest
+    ports:
+    - "8080:8080/tcp"
+    networks:
+    - pyspark-net
+    deploy:
+     restart_policy:
+       condition: on-failure
+
+networks:
+  pyspark-net:

@@ -1,0 +1,9 @@
+{
+  "input_data_path": "/home/jovyan/work/resources/data.json",
+  "db_hostname":"postgres",
+  "db_port":5432,
+  "db_username":"postgres",
+  "db_password": "postgres1234",
+  "db_name": "demo",
+  "db_table":"orders"
+}

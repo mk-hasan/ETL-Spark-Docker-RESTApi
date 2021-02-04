@@ -1,0 +1,14 @@
+{
+  "db_hostname":"postgres",
+  "db_port":5432,
+  "db_username":"postgres",
+  "db_password": "postgres1234",
+  "db_name": "demo",
+  "db_table":"orders",
+  "unit_test_customerid":"5b6950c01a9cb631656ef441",
+  "unit_test_expected_return":{
+          "customerId": "5b6950c01a9cb631656ef441", 
+          "orders": 8, 
+          "totalNetMerchandiseValueEur": 103.58
+        }
+}
