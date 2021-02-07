@@ -1,4 +1,4 @@
-### The whole project is about doing some ETL job with json file and the retrieve the data from postgres through API 
+### ETL with PySpark, Postgres, Flask API and DOcker. 
 
 The architecture:
 
